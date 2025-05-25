@@ -1,0 +1,36 @@
+:root {
+
+    /* Colors */
+
+    --white: #FFFFFF;
+    --grey-500: #86A2A5;
+    --grey-900: #2A4144;
+    --green-200: #E0F1E8;
+    --green-600: #0C7D69;
+    --red: #D73C3C;
+
+    /* Spacing */
+
+    --space-100: 8px;
+    --space-150: 12px;
+    --space-200: 16px;
+    --space-300: 24px;
+    --space-400: 32px;
+    --space-500: 40px;
+    --space-1600: 128px;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("assets/fonts/Karla-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
