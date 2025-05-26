@@ -15,33 +15,33 @@
       <div id="names">
         <div class="name-box">
           <label for="first-name">First Name <span class="required">*</span></label>
-          <input type="text" id="first-name" autocomplete="given-name">
+          <input type="text" id="first-name" autocomplete="given-name" aria-describedby="first-invalid">
           <span id="first-invalid" class="invalid">This field is required</span>
         </div>
         <div class="name-box">
           <label for="last-name">Last Name <span class="required">*</span></label>
-          <input id="last-name" type="text" autocomplete="family-name">
+          <input id="last-name" type="text" autocomplete="family-name" aria-describedby="last-invalid">
           <span id="last-invalid" class="invalid">This field is required</span>
         </div>
       </div>
       <label for="email">Email Address <span class="required">*</span></label>
-      <input id="email" type="email" autocomplete="email">
+      <input id="email" type="email" autocomplete="email" aria-describedby="email-invalid">
       <span id="email-invalid" class="invalid">Please enter a valid email address</span>
-      <fieldset required>
+      <fieldset>
         <legend>Query Type <span class="required">*</span></legend>
         <label for="general">
-          <input id="general" type="radio" name="query">
+          <input id="general" type="radio" name="query" aria-describedby="radios-invalid">
           General Enquiry</label>
         <label for="support">
-          <input id="support" type="radio" name="query">
+          <input id="support" type="radio" name="query" aria-describedby="radios-invalid">
           Support</label>
       </fieldset>
       <span id="radios-invalid" class="invalid">Please select a query type</span>
       <label for="message">Message <span class="required">*</span></label>
-      <textarea id="message"></textarea>
+      <textarea id="message" aria-describedby="message-invalid"></textarea>
       <span id="message-invalid" class="invalid">This field is required</span>
       <label for="consent" id="consent-label">
-        <input id="consent" type="checkbox">
+        <input id="consent" type="checkbox" aria-describedby="consent-invalid">
         <span>I consent to being contacted by the team <span class="required">*</span></span>
       </label>
       <span id="consent-invalid" class="invalid">To submit this form, please consent to being contacted</span>

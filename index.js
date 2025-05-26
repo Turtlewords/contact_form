@@ -23,6 +23,18 @@ form.addEventListener("submit", (e) => {
 
 form.addEventListener("reset", resetErrors)
 
+radios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+        if (radio.checked) {
+            resetRadios()
+            radio.parentElement.style.backgroundColor = "#E0F1E8";
+
+        } 
+    })
+})
+
+
+
 
 function validateForm() {
     let isValid = true;
@@ -89,6 +101,7 @@ function validateForm() {
     if (isValid) {
         showToast();
         resetForm()
+        resetRadios()
         return true;
     } 
     else {
@@ -114,6 +127,12 @@ function resetForm() {
     })
     message.value = "";
     consent.checked = false;
+}
+
+function resetRadios() {
+    radios.forEach((radio) => {
+                radio.parentElement.style.backgroundColor = "white";
+            } )
 }
 
 
