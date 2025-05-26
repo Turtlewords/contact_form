@@ -11,30 +11,47 @@
 <body>
   <main>
     <h1>Contact Us</h1>
-    <form>
-      <label for="first-name">First Name <span class="required">*</span></label>
-      <input type="text" id="first-name" autocomplete="given-name" required>
-      <label for="last-name">Last Name <span class="required">*</span></label>
-      <input id="last-name" type="text" autocomplete="family-name" required>
+    <form id="form">
+      <div id="names">
+        <div class="name-box">
+          <label for="first-name">First Name <span class="required">*</span></label>
+          <input type="text" id="first-name" autocomplete="given-name" required>
+        </div>
+        <div class="name-box">
+          <label for="last-name">Last Name <span class="required">*</span></label>
+          <input id="last-name" type="text" autocomplete="family-name" required>
+        </div>
+      </div>
       <label for="email">Email Address <span class="required">*</span></label>
       <input id="email" type="email" autocomplete="email" required>
       <fieldset>
         <legend>Query Type <span class="required">*</span></legend>
-        <label for="general"></label>
-        <input id="general" type="radio">
-        <label for="support">Support</label>
-        <input id="support" type="radio">
+        <label for="general">
+          <input id="general" type="radio">
+          General Enquiry</label>
+        <label for="support">
+          <input id="support" type="radio">
+          Support</label>
       </fieldset>
       <label for="text-box">Message <span class="required">*</span></label>
       <textarea id="text-box"></textarea>
-
+      <label for="consent" id="consent-label">
+        <input id="consent" type="checkbox" required>
+        <span>I consent to being contacted by the team <span class="required">*</span></span></label>
+      <button type="submit" id="submit-btn">Submit</button>
     </form>
   </main>
-
+  <div class="toast">
+    <div id="toast-top">
+      <img src="assets/images/icon-success-check.svg" alt="check">
+      <h2>Message Sent!</h2>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
   
 
  
-  This field is required
+  <!-- This field is required
 
   
   This field is required
@@ -49,13 +66,11 @@
   
   This field is required
 
-  I consent to being contacted by the team
+  
   To submit this form, please consent to being contacted
 
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  
+   -->
   
   <script src="index.js"></script>
 </body>
