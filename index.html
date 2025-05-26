@@ -15,30 +15,37 @@
       <div id="names">
         <div class="name-box">
           <label for="first-name">First Name <span class="required">*</span></label>
-          <input type="text" id="first-name" autocomplete="given-name" required>
+          <input type="text" id="first-name" autocomplete="given-name">
+          <span id="first-invalid" class="invalid">This field is required</span>
         </div>
         <div class="name-box">
           <label for="last-name">Last Name <span class="required">*</span></label>
-          <input id="last-name" type="text" autocomplete="family-name" required>
+          <input id="last-name" type="text" autocomplete="family-name">
+          <span id="last-invalid" class="invalid">This field is required</span>
         </div>
       </div>
       <label for="email">Email Address <span class="required">*</span></label>
-      <input id="email" type="email" autocomplete="email" required>
-      <fieldset>
+      <input id="email" type="email" autocomplete="email">
+      <span id="email-invalid" class="invalid">Please enter a valid email address</span>
+      <fieldset required>
         <legend>Query Type <span class="required">*</span></legend>
         <label for="general">
-          <input id="general" type="radio">
+          <input id="general" type="radio" name="query">
           General Enquiry</label>
         <label for="support">
-          <input id="support" type="radio">
+          <input id="support" type="radio" name="query">
           Support</label>
       </fieldset>
-      <label for="text-box">Message <span class="required">*</span></label>
-      <textarea id="text-box"></textarea>
+      <span id="radios-invalid" class="invalid">Please select a query type</span>
+      <label for="message">Message <span class="required">*</span></label>
+      <textarea id="message"></textarea>
+      <span id="message-invalid" class="invalid">This field is required</span>
       <label for="consent" id="consent-label">
-        <input id="consent" type="checkbox" required>
-        <span>I consent to being contacted by the team <span class="required">*</span></span></label>
-      <button type="submit" id="submit-btn">Submit</button>
+        <input id="consent" type="checkbox">
+        <span>I consent to being contacted by the team <span class="required">*</span></span>
+      </label>
+      <span id="consent-invalid" class="invalid">To submit this form, please consent to being contacted</span>
+      <input type="submit" id="submit-btn" value="Submit">
     </form>
   </main>
   <div class="toast">
@@ -48,29 +55,6 @@
     </div>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
-  
-
- 
-  <!-- This field is required
-
-  
-  This field is required
-
-  
-  Please enter a valid email address
-  This field is required
-
-  
-  Please select a query type
-
-  
-  This field is required
-
-  
-  To submit this form, please consent to being contacted
-
-  
-   -->
   
   <script src="index.js"></script>
 </body>

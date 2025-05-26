@@ -116,6 +116,7 @@ textarea {
     padding: 1rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .toast {
@@ -150,6 +151,11 @@ h2 {
 
 .toast p {
     margin: 0;
+}
+
+.invalid {
+    color: #D73C3C;
+    display: none;
 }
 
 
