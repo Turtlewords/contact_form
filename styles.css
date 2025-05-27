@@ -42,7 +42,7 @@ body {
 
 main {
     width: 95%;
-    max-width: 700px;
+    max-width: 750px;
     background-color: var(--white);
     padding: 2rem;
     border-radius: 16px;
@@ -51,7 +51,7 @@ main {
 #form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.6rem;
 }
 
 #names {
@@ -81,8 +81,8 @@ fieldset label {
     display: flex;
     align-items: center;
     gap: .5rem;
-    border: 1px solid black;
-    padding: .5rem;
+    border: 1px solid var(--grey-500);
+    padding: .75rem;
     border-radius: 8px;
     flex: 1;
 }
@@ -99,7 +99,7 @@ input {
     font-size: 1rem;
     padding: .75rem;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid var(--grey-500);
 }
 
 input:hover, textarea:hover, fieldset label:hover {
@@ -121,6 +121,7 @@ textarea {
     font-size: 1rem;
     line-height: 1.25;
     height: 200px;
+    border: 1px solid var(--grey-500);
 }
 
 #consent-label {
@@ -160,6 +161,10 @@ textarea {
 
 /* Typography */
 
+h1 {
+    margin: 0 0 1rem;
+}
+
 .required {
     color: var(--green-600);
 }
@@ -191,6 +196,6 @@ h2 {
     }
 
     #message {
-        height: 85px;
+        height: 90px;
     }
 }
