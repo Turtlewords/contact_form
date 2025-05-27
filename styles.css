@@ -38,6 +38,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--green-200);
+    color: var(--grey-900);
 }
 
 main {
