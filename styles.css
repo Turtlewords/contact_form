@@ -45,14 +45,14 @@ main {
     width: 95%;
     max-width: 750px;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 2.25rem;
     border-radius: 16px;
 }
 
 #form {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 1rem;
 }
 
 #names {
@@ -83,13 +83,14 @@ fieldset label {
     align-items: center;
     gap: .5rem;
     border: 1px solid var(--grey-500);
-    padding: .75rem;
+    padding: .85rem;
     border-radius: 8px;
     flex: 1;
 }
 
 #consent-label {
     cursor: pointer;
+    margin: 1rem 0;
 }
 
 legend {
@@ -98,7 +99,7 @@ legend {
 
 input {
     font-size: 1rem;
-    padding: .75rem;
+    padding: .85rem;
     border-radius: 8px;
     border: 1px solid var(--grey-500);
 }
@@ -197,6 +198,6 @@ h2 {
     }
 
     #message {
-        height: 90px;
+        height: 110px;
     }
 }
